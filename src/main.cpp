@@ -69,7 +69,7 @@ int main() {
     }
 
     std::cout << "\n";
-    std::cout << randomNumber;
+    std::cout << "The enemy's number was: " << randomNumber;
 
     return 0;
 }
