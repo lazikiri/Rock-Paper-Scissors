@@ -12,27 +12,24 @@ int main() {
     std::cin >> userNumber;
 
     if (randomNumber == 0) {
-        std::cout << "Rock\n";
-        if (userNumber == 2) {
-            std::cout << "You lose.";
-        }
-
-        if (userNumber == 0) {
-            std::cout << "You tied.";
-        }
-
-        else {
-            std::cout << "You win!";
-        }
+        std::cout << "The enemy picked rock.\n";
     }
 
     if (randomNumber == 1) {
-        std::cout << "Paper\n";
-        if (userNumber == 0) {
+        std::cout << "The enemy picked paper.\n";
+    }
+
+    if (randomNumber == 2) {
+        std::cout << "The enemy picked scissors.\n";
+    }
+
+    if (userNumber == 0) {
+        std::cout << "You picked rock.\n";
+        if (randomNumber == 1) {
             std::cout << "You lose.";
         }
 
-        if (userNumber == 1) {
+        if (randomNumber == 0) {
             std::cout << "You tied.";
         }
 
@@ -41,13 +38,28 @@ int main() {
         }
     }
 
-    if (randomNumber == 2) {
-        std::cout << "Scissors\n";
-        if (userNumber == 1) {
+    if (userNumber == 1) {
+        std::cout << "You picked paper.\n";
+        if (randomNumber == 0) {
             std::cout << "You lose.";
         }
 
-        if (userNumber == 2) {
+        if (randomNumber == 1) {
+            std::cout << "You tied.";
+        }
+
+        else {
+            std::cout << "You win!";
+        }
+    }
+
+    if (userNumber == 2) {
+        std::cout << "You picked scissors.\n";
+        if (randomNumber == 0) {
+            std::cout << "You lose.";
+        }
+
+        if (randomNumber == 2) {
             std::cout << "You tied.";
         }
 
